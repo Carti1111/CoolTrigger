@@ -3,7 +3,7 @@ local Crit = math.random() > .6 and true or false;
 for i,v in pairs(game.Players:GetPlayers()) do
 if v and v.Character and v.Character:FindFirstChild("Head") then
 local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude
-for i  = 1,10 do
+for i  = 1, 10 do
 game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,
 v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()),
 Gun.Name,
